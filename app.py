@@ -4,8 +4,8 @@ from ai_analyzer import analyze_email
 from email_parser import parse_eml
 from rag import add_case, count_cases, retrieve_cases
 
-st.set_page_config(page_title="PhishGuard AI", layout="wide")
-st.title("🛡 PhishGuard AI")
+st.set_page_config(page_title="AI-Powered Phishing Email Analyzer", layout="wide")
+st.title("🛡 AI-Powered Phishing Email Analyzer")
 st.sidebar.metric("Cases in knowledge base", count_cases())
 
 uploaded = st.file_uploader("Upload EML File", type=["eml"])
